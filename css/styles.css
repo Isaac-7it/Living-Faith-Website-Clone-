@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sarala", Arial;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+.header {
+  height: 75vh;
+  background-image: url(../img/gospel\ img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link_container {
+  flex: 0 0 50%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.logo-box {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  /* margin: 5rem; */
+}
+
+.logo {
+  width: 100%;
+  align-self: center;
+  margin-left: 3rem;
+}
+
+.logo-text:link,
+.logo-text:visited {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  align-self: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-family: "Bebas", Arial;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  border-bottom: #ff0000 1px dotted;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  padding: 1rem 3rem;
+  background-color: #fff;
+  color: #212529;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  cursor: default;
+  opacity: 0;
+}
+
+.nav-btn_tooltip {
+  margin: 1rem;
+  color: #212529 !important;
+  background-color: #fff;
+  padding: 1rem;
+  height: 40vh;
+}
+
+.nav-link-text:link,
+.nav-link-text:visited {
+  color: #212529 !important;
+}
+
+.nav-link-text:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.section {
+  height: auto;
+  /* border: 1px solid #333; */
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.main-row {
+  padding: 2rem;
+  border: none;
+  border-bottom: 1px #eee solid;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+}
+
+.btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #212529;
+  padding: 1.8rem 2rem;
+}
+
+.btn:first-child {
+  border-bottom: 3px solid red;
+}
+
+.main-topic {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "Open Sans", Arial;
+  letter-spacing: -1px;
+  color: #212529;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.main-sub-topic {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1.5rem 4rem;
+}
+
+.main-sub-topic:first-child {
+  border-bottom: 1px solid #eee;
+}
+
+.main-sub-topic:last-child {
+  border-top: 1px solid #eee;
+}
+
+.topic-link:link,
+.topic-link:visited {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #990000;
+}
+
+.topic-link:hover {
+  border-bottom: dotted 1px #f00;
+  color: #ff0000;
+}
+
+.main-content {
+  border: 1px solid #eee;
+  padding: 0 2.5rem;
+}
+
+.text-col {
+  font-size: 1.6rem;
+  color: #212529;
+  padding: 1.7rem 4rem;
+}
+
+.footer {
+  background-color: #212529;
+  height: 30vh;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer_text {
+  text-transform: uppercase;
+  margin-bottom: 6.5rem;
+}
+
+.message-btn:link,
+.message-btn:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.message-btn:hover .fa-brands {
+  color: #ff0000;
+  border-bottom: 1px #ff0000 dotted;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.4rem;
+}
+
+.nav-bottom {
+  background-color: #e3260b;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 2;
+}
+
+.icon-link:link,
+.icon-link:visited {
+  text-decoration: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.fa-sharp {
+  font-size: 3rem;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  margin-left: 1.8rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .header {
+    background-position: top;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .nav-link {
+    display: none;
+  }
+
+  .nav-btn:link,
+  .nav-btn:visited {
+    opacity: 1;
+    margin-left: 30rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .header {
+    width: fit-content;
+  }
+
+  .section {
+    width: fit-content;
+  }
+}
